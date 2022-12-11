@@ -1,0 +1,80 @@
+<html>
+<head> 
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid black;
+            background-color: greenyellow;
+        }
+            h1{
+                color: rebeccapurple;
+                text-align: center;
+                border-bottom-style:solid ;
+            }
+        span{
+            color: red;
+        }
+            table{
+                color: blue;
+                margin-left:50px;
+            }
+            button{
+                font-size: 20px;
+                text-align: center;
+                width: 100px;
+                height: 30px;
+                background-color: rgb(243, 170, 224);
+            }
+            form{
+                font-style:bold;
+            }
+    </style>
+    <script>
+    function display()
+        {
+         alert("Form Submitted");
+        }</script>
+</head>
+<body>
+    <h1 align="center">FORM</h1>
+    <form>
+        <label>NAME<span>*</span>:-<input type="text" id="name" minlength="2" required/></label><br>
+        <br>
+        <label>ROLL NO<span>*</span>  :-</label>  <input type="number" id="roll" pattern="[0-9]{10}" required/><br>
+        <br>
+        <label>DATE<span>*</span>:-<input type="date" id="date" required/></label><br>
+        <br>
+        ADDRESS<span>*</span><br>
+            <textarea cols="80" rows="5" id="add" value="address" required></textarea>
+        <br>
+        <br>
+        ACCADEMICS<span>*</span>
+            <table border="1px">
+                <tr>
+                    <th>STD</th>
+                    <th>Subjects</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <th>8th</th>
+                    <td><input type="text" required/></td>
+                    <td><input type="number" min="0" max="100" required/></td>
+                </tr>
+                <tr>
+                    <th>9th</th>
+                    <td><input type="text" required/></td>
+                    <td><input type="number" min="0" max="100" required/></td>
+                </tr>
+                <tr>
+                    <th>10th</th>
+                    <td><input type="text" required/></td>
+                    <td><input type="number" min="0" max="100" required/></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <center>
+            <button type="submit" onload="display()">Submit</button></center>
+    </form>
+</body>
+</html>
